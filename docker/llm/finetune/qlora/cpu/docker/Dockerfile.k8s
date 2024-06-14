@@ -31,7 +31,6 @@ RUN mkdir -p /ipex_llm/data && mkdir -p /ipex_llm/model && \
     cd Python-3.11.1 && \
     ./configure --enable-optimizations --with-zlib && \
     make altinstall && \
-    rm /usr/bin/python3 && \
     # Create a symbolic link pointing to Python 3.11 at /usr/bin/python3
     ln -s /opt/python/Python-3.11.1/python /usr/bin/python3 && \
     # Create a symbolic link pointing to /usr/bin/python3 at /usr/bin/python

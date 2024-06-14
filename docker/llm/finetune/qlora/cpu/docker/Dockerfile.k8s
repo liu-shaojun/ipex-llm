@@ -23,7 +23,7 @@ RUN mkdir -p /ipex_llm/data && mkdir -p /ipex_llm/model && \
     # Install python 3.11.1
     apt-get update && apt-get install -y openssh-server openssh-client libcap2-bin gnupg2 ca-certificates \
     curl wget gpg gpg-agent git \
-    gcc g++ make libunwind8-dev zlib1g-dev libssl-dev libffi-dev && \
+    gcc g++ make libunwind8-dev zlib1g-dev libssl-dev libffi-dev xz-utils && \
     mkdir -p /opt/python && \
     cd /opt/python && \
     wget https://www.python.org/ftp/python/3.11.1/Python-3.11.1.tar.xz && \

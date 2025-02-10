@@ -55,7 +55,7 @@ python eval.py \
 2. **Start Docker Container**:
    ```bash
    docker run -td \
-         --privileged \
+         --group-add video \
          --net=host \
          --device=/dev/dri \
          --name=$CONTAINER_NAME \
